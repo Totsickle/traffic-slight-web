@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Traffic Slight - A GPS-Based Mobile Application for Navigation and Fuel Consumption Tracking for Motorcycle Riders in Valenzuela City">
+    <meta name="theme-color" content="#0066CC">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Traffic Slight - Smart Navigation for Motorcycle Riders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-motorcycle"></i>
+                <span>Traffic Slight</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#how-it-works" class="nav__link">How It Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#benefits" class="nav__link">Benefits</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#download" class="nav__link">Download</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <h1 class="home__title">
+                        Smart Navigation. <br>
+                        Efficient Riding. <br>
+                        <span class="gradient-text">Real-Time Traffic Awareness.</span>
+                    </h1>
+                    <p class="home__description">
+                        Traffic Slight helps motorcycle riders in Valenzuela City navigate traffic, 
+                        track fuel usage, and receive maintenance alerts using real-time GPS-based data.
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#about" class="button button-primary">Learn More</a>
+                        <a href="#download" class="button button-secondary">Download App</a>
+                    </div>
+                </div>
+                <div class="home__image">
+                    <div class="home__phone"> 
+                        <img src="images/HomePic.png" alt="Traffic Slight App">
+                    </div>
+                </div>
+            </div>
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">About Traffic Slight</span>
+                    <h2 class="section__title">Navigate Smarter, Ride Efficiently</h2>
+                </div>
+                <div class="about__container">
+                    <div class="about__image">
+                        <div class="about__img-wrapper">
+                            <img src="images/aboutpicture.png" alt="Traffic Slight Navigation" class="about__img-wrapper">
+                            
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <p class="about__description">
+                            Traffic Slight is a GPS-based mobile application developed to support motorcycle 
+                            riders in Valenzuela City. It provides real-time traffic updates, optimized route 
+                            suggestions, fuel usage estimates, and automated maintenance alerts.
+                        </p>
+                        <p class="about__description">
+                            The goal is to help riders avoid congestion, reduce fuel costs, and enhance 
+                            riding efficiency through intelligent, data-driven navigation.
+                        </p>
+                        <div class="about__stats">
+                            <div class="stat__card">
+                                <i class="fas fa-route"></i>
+                                <h3>Real-Time Routes</h3>
+                                <p>Optimized navigation</p>
+                            </div>
+                            <div class="stat__card">
+                                <i class="fas fa-gas-pump"></i>
+                                <h3>Fuel Tracking</h3>
+                                <p>Monitor consumption</p>
+                            </div>
+                            <div class="stat__card">
+                                <i class="fas fa-tools"></i>
+                                <h3>Maintenance Alerts</h3>
+                                <p>Automated reminders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works section" id="how-it-works">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Process</span>
+                    <h2 class="section__title">How Traffic Slight Works</h2>
+                </div>
+                <div class="steps__container">
+                    <div class="step__card">
+                        <div class="step__number">1</div>
+                        <div class="step__icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <h3 class="step__title">Input Motorcycle Details</h3>
+                        <p class="step__description">
+                            Users input motorcycle details such as fuel type, oil type, 
+                            motorcycle age, and odometer reading.
+                        </p>
+                    </div>
+                    <div class="step__card">
+                        <div class="step__number">2</div>
+                        <div class="step__icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="step__title">Retrieve GPS Traffic Data</h3>
+                        <p class="step__description">
+                            The app retrieves live GPS traffic data to analyze current 
+                            road conditions in real-time.
+                        </p>
+                    </div>
+                    <div class="step__card">
+                        <div class="step__number">3</div>
+                        <div class="step__icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="step__title">Generate Optimized Routes</h3>
+                        <p class="step__description">
+                            Traffic Slight generates optimized routes based on traffic 
+                            conditions and fuel efficiency.
+                        </p>
+                    </div>
+                    <div class="step__card">
+                        <div class="step__number">4</div>
+                        <div class="step__icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="step__title">Real-Time Updates</h3>
+                        <p class="step__description">
+                            As the rider travels, the system updates estimated fuel 
+                            consumption and maintenance indicators.
+                        </p>
+                    </div>
+                    <div class="step__card">
+                        <div class="step__number">5</div>
+                        <div class="step__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="step__title">Trip Summary & Insights</h3>
+                        <p class="step__description">
+                            After each trip, the app provides a summary including distance 
+                            traveled, fuel used, and maintenance alerts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots section" id="features">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Features</span>
+                    <h2 class="section__title">App Screenshots</h2>
+                </div>
+                <div class="screenshots__container">
+                    <div class="screenshot__card">
+                        <div class="screenshot__placeholder">
+                            <img src="images/TrafficMapDashboard.png" alt="Traffic Map Dashboard" class="screenshot__image">
+                        </div>
+                        <h3 class="screenshot__title">Traffic Map Dashboard</h3>
+                        <p class="screenshot__description">Real-time traffic visualization</p>
+                    </div>
+                    <div class="screenshot__card">
+                        <div class="screenshot__placeholder">
+                            <img src="images/screenshot2.png" alt="Route Selection" class="screenshot__image">
+                        </div>
+                        <h3 class="screenshot__title">Route Selection</h3>
+                        <p class="screenshot__description">Choose optimal paths</p>
+                    </div>
+                    <div class="screenshot__card">
+                        <div class="screenshot__placeholder">
+                            <img src="images/Fuel and Maintenance.png" alt="Fuel & Maintenance" class="screenshot__image">
+                        </div>
+                        <h3 class="screenshot__title">Fuel & Maintenance</h3>
+                        <p class="screenshot__description">Monitor usage and alerts</p>
+                    </div>
+                    <div class="screenshot__card">
+                        <div class="screenshot__placeholder">
+                            <img src="images/TripSummary.png" alt="Trip Summary" class="screenshot__image">
+                        </div>
+                        <h3 class="screenshot__title">Trip Summary</h3>
+                        <p class="screenshot__description">Detailed trip analytics</p>
+                    </div>
+                    <div class="screenshot__card">
+                        <div class="screenshot__placeholder">
+                            <img src="images/IncidentReport.png" alt="Incident Reporting" class="screenshot__image">
+                        </div>
+                        <h3 class="screenshot__title">Incident Reporting</h3>
+                        <p class="screenshot__description">Report traffic & fuel prices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits section" id="benefits">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Why Choose Us</span>
+                    <h2 class="section__title">Key Benefits</h2>
+                </div>
+                <div class="benefits__container">
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="benefit__title">Reduce Travel Delays</h3>
+                        <p class="benefit__description">
+                            Stay ahead of congestion with real-time traffic awareness 
+                            and intelligent route suggestions.
+                        </p>
+                    </div>
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="benefit__title">Fuel-Efficient Riding</h3>
+                        <p class="benefit__description">
+                            Supports smarter, fuel-efficient riding habits to help you 
+                            save money and reduce emissions.
+                        </p>
+                    </div>
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3 class="benefit__title">Automated Reminders</h3>
+                        <p class="benefit__description">
+                            Provides automated reminders for tuning and oil changes 
+                            to keep your motorcycle in top condition.
+                        </p>
+                    </div>
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3 class="benefit__title">Minimize Fuel Expenses</h3>
+                        <p class="benefit__description">
+                            Helps riders minimize unnecessary fuel expenses through 
+                            optimized routing and consumption tracking.
+                        </p>
+                    </div>
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="benefit__title">Safer Traffic Management</h3>
+                        <p class="benefit__description">
+                            Contributes to safer, data-driven traffic management for 
+                            Valenzuela City through real-time data collection.
+                        </p>
+                    </div>
+                    <div class="benefit__card">
+                        <div class="benefit__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="benefit__title">Community Participation</h3>
+                        <p class="benefit__description">
+                            Encourages community participation through incident and 
+                            fuel price reporting features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team section" id="team">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Our Team</span>
+                    <h2 class="section__title">Project Context</h2>
+                </div>
+                <div class="team__content">
+                    <div class="team__info">
+                        <div class="team__card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Development Team</h3>
+                            <p>
+                                Developed by BS Information Technology students: 
+                                <strong>Dela Paz, Gonzales, Peteros, and Sabellano</strong> 
+                                of Pamantasan ng Lungsod ng Valenzuela.
+                            </p>
+                        </div>
+                        <div class="team__card">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Partnership</h3>
+                            <p>
+                                Designed in alignment with the <strong>Valenzuela City 
+                                Traffic Management Office (TMO)</strong> to support efficient 
+                                and data-driven mobility within the city.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__image">
+                        <div class="team__img-wrapper">
+                            <!-- Add your team image here -->
+                            <img src="images/TeamPic.jpg" alt="Traffic Slight Development Team" class="team__photo">
+                            <!-- Fallback icon if image is not available -->
+                            <i class="fas fa-university team__icon-fallback"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Members Grid -->
+                <div class="team__members">
+                    <div class="member__card">
+                        <div class="member__image">
+                            <img src="images/Delapaz.png" alt="Dela Paz">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member__name">Dela Paz</h4>
+                        <p class="member__role">Technical Lead</p>
+                    </div>
+                    <div class="member__card">
+                        <div class="member__image">
+                            <img src="images/Gonzales.png" alt="Gonzales">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member__name">Gonzales</h4>
+                        <p class="member__role">Communication and Documentation Lead</p>
+                    </div>
+                    <div class="member__card">
+                        <div class="member__image">
+                            <img src="images/Peteros.png" alt="Peteros">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member__name">Peteros</h4>
+                        <p class="member__role">Design Lead</p>
+                    </div>
+                    <div class="member__card">
+                        <div class="member__image">
+                            <img src="images/Sabellano.png" alt="Sabellano">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member__name">Sabellano</h4>
+                        <p class="member__role">Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download section" id="download">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get The App</span>
+                    <h2 class="section__title">Download Traffic Slight</h2>
+                    <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                        Get the latest version for your Android device and start navigating smarter today.
+                    </p>
+                </div>
+
+                <div class="download__wrapper">
+                    <!-- Main Download Card -->
+                    <div class="download__hero">
+                        <div class="download__hero-content">
+                            <div class="hero__badge">
+                                <i class="fas fa-star"></i>
+                                <span>Latest Version</span>
+                            </div>
+                            <h3 class="hero__title">Traffic Slight v1.0.0</h3>
+                            <p class="hero__description">
+                                Navigate Valenzuela City's roads with real-time traffic updates, 
+                                fuel tracking, and smart route optimization.
+                            </p>
+                            
+                            <div class="hero__stats">
+                                <div class="stat__item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <div>
+                                        <span class="stat__label">Released</span>
+                                        <span class="stat__value">November 2025</span>
+                                    </div>
+                                </div>
+                                <div class="stat__item">
+                                    <i class="fas fa-hdd"></i>
+                                    <div>
+                                        <span class="stat__label">Size</span>
+                                        <span class="stat__value">~65 MB</span>
+                                    </div>
+                                </div>
+                                <div class="stat__item">
+                                    <i class="fas fa-android"></i>
+                                    <div>
+                                        <span class="stat__label">Requires</span>
+                                        <span class="stat__value">Android 7.0+</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="hero__download-btn" onclick="downloadAPK('main')">
+                                <i class="fas fa-download"></i>
+                                Download APK (Universal)
+                            </button>
+                        </div>
+
+                        <div class="download__hero-visual">
+                            <div class="visual__circle visual__circle-1"></div>
+                            <div class="visual__circle visual__circle-2"></div>
+                            <div class="visual__circle visual__circle-3"></div>
+                            <div class="visual__device">
+                                <div class="device__screen">
+                                    <img src="images/HomePic.png" alt="Traffic Slight App" class="screen__background">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alternative Downloads -->
+                    <div class="download__alternatives">
+                        <h3 class="alternatives__title">
+                            <i class="fas fa-cog"></i>
+                            Advanced Options
+                        </h3>
+                        <p class="alternatives__subtitle">
+                            Choose a specific architecture for optimal performance
+                        </p>
+
+                        <div class="alternatives__grid">
+                            <div class="alt__card" onclick="downloadAPK('arm64')">
+                                <div class="alt__icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="alt__info">
+                                    <h4 class="alt__title">ARM64 (64-bit)</h4>
+                                    <p class="alt__desc">Most modern smartphones</p>
+                                    <span class="alt__badge">Recommended for new phones</span>
+                                </div>
+                                <div class="alt__action">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="alt__card" onclick="downloadAPK('armeabi')">
+                                <div class="alt__icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="alt__info">
+                                    <h4 class="alt__title">ARM (32-bit)</h4>
+                                    <p class="alt__desc">Older Android devices</p>
+                                    <span class="alt__badge">For legacy phones</span>
+                                </div>
+                                <div class="alt__action">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="alt__card" onclick="downloadAPK('x86')">
+                                <div class="alt__icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="alt__info">
+                                    <h4 class="alt__title">x86/x64</h4>
+                                    <p class="alt__desc">Intel-based devices</p>
+                                    <span class="alt__badge">Tablets & emulators</span>
+                                </div>
+                                <div class="alt__action">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Installation Steps -->
+                    <div class="download__steps">
+                        <h3 class="steps__title">Quick Installation Guide</h3>
+                        <div class="steps__grid">
+                            <div class="step__item">
+                                <div class="step__icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Enable Installation</h4>
+                                <p>Allow "Install from Unknown Sources" in your device settings</p>
+                            </div>
+                            <div class="step__item">
+                                <div class="step__icon">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <h4>Download APK</h4>
+                                <p>Tap the download button and wait for the file to complete</p>
+                            </div>
+                            <div class="step__item">
+                                <div class="step__icon">
+                                    <i class="fas fa-file-import"></i>
+                                </div>
+                                <h4>Install App</h4>
+                                <p>Open the APK file and tap "Install" to begin setup</p>
+                            </div>
+                            <div class="step__item">
+                                <div class="step__icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h4>Start Navigating</h4>
+                                <p>Grant permissions and enjoy smart navigation!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info Banner -->
+                    <div class="download__banner">
+                        <div class="banner__icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="banner__content">
+                            <h4>Currently in Development</h4>
+                            <p>
+                                Traffic Slight is being actively developed by PLV IT students. 
+                                APK downloads will be available upon official release. 
+                                Follow us for updates!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get In Touch</span>
+                    <h2 class="section__title">Contact Us</h2>
+                </div>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>trafficslightapp@gmail.com</p>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Valenzuela City, Philippines</p>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" placeholder="Your Name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" placeholder="Your Email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea placeholder="Your Message" class="form__input form__textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button button-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>Traffic Slight</span>
+                    </div>
+                    <p class="footer__description">
+                        Smart navigation and fuel tracking for motorcycle riders in Valenzuela City.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h3 class="footer__title">Quick Links</h3>
+                        <ul class="footer__list">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#about" class="footer__link">About</a></li>
+                            <li><a href="#how-it-works" class="footer__link">How It Works</a></li>
+                            <li><a href="#benefits" class="footer__link">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h3 class="footer__title">Resources</h3>
+                        <ul class="footer__list">
+                            <li><a href="#features" class="footer__link">Features</a></li>
+                            <li><a href="#team" class="footer__link">Team</a></li>
+                            <li><a href="#download" class="footer__link">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h3 class="footer__title">Support</h3>
+                        <ul class="footer__list">
+                            <li><a href="#contact" class="footer__link">Contact Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 Traffic Slight. Developed by PLV IT Students. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
