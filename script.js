@@ -238,22 +238,22 @@ console.log('%cDeveloped by PLV IT Students', 'color: #00A8E8; font-size: 14px;'
 console.log('%cFor Valenzuela City Motorcycle Riders', 'color: #7F8C8D; font-size: 12px;');
 
 // Download APK Function
-function downloadAPK(version) {
-    const versionNames = {
-        'main': 'Main Release (Universal APK)',
-        'arm64': 'ARM64-v8a (64-bit)',
-        'armeabi': 'ARMeabi-v7a (32-bit)'
+function downloadAPK(variant = 'main') {
+    const files = {
+        main: 'APK/11.12.0 TRAFFIC SLIGHT APP.apk'
     };
 
-    // Show notification
-    showDownloadNotification(versionNames[version]);
+    const apkPath = files[variant] || files.main;
+    const a = document.createElement('a');
+    a.href = encodeURI(apkPath);
+    a.setAttribute('download', apkPath.split('/').pop());
+    a.rel = 'noopener';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
 
-    // Show alert since APK is not yet available
-    setTimeout(() => {
-        alert(`${versionNames[version]}\n\nThe app is currently in development.\nDownload will be available soon!\n\nStay tuned for the official release.`);
-    }, 500);
-
-    console.log(`Download requested: ${versionNames[version]}`);
+    console.log('APK download started:', apkPath);
 }
 
 // Show download notification
