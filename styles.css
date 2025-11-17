@@ -1420,6 +1420,55 @@ button {
     bottom: 2rem;
 }
 
+.sample-account{
+    background:var(--dark-card);
+    padding:1rem;
+    border-radius:12px;
+    max-width:420px;
+    margin:1rem auto 0;
+    color:var(--text-light);
+    box-shadow:0 8px 24px rgba(0,102,204,0.06);
+}
+.sample-row{
+    display:flex;
+    align-items:center;
+    gap:0.75rem;
+    padding:0.5rem 0;
+    border-bottom:1px dashed rgba(255,255,255,0.03);
+}
+.sample-row:last-child{ border-bottom:none; }
+.sample-icon{
+    font-size:1.15rem;
+    color:var(--secondary-color);
+    width:36px;
+    text-align:center;
+    flex:0 0 36px;
+}
+.sample-credentials{ flex:1; min-width:0; }
+.sample-label{
+    display:block;
+    font-size:0.75rem;
+    color:var(--text-gray);
+    margin-bottom:0.15rem;
+}
+.sample-value{
+    font-weight:600;
+    color:var(--text-light);
+    word-break:break-all;
+}
+.sample-note{
+    display:block;
+    color:var(--text-gray);
+    margin-top:0.6rem;
+    text-align:center;
+    font-size:0.85rem;
+}
+/* small screens */
+@media screen and (max-width:420px){
+    .sample-account{ padding:0.75rem; max-width:100%; }
+    .sample-icon{ width:30px; flex:0 0 30px; font-size:1rem; }
+}
+
 /* Responsive Design */
 @media screen and (max-width: 968px) {
     .container {
